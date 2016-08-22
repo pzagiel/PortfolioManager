@@ -134,6 +134,7 @@ public class EuronextProvider {
     }
 
 
+/* Need to explain what this function do */
     public void getPage(String dataUrl) throws IOException {
         URL url = new URL(dataUrl);
         BufferedReader reader = new BufferedReader
