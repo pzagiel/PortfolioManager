@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		651E55AB1C25F35B00AD4700 /* PriceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 651E55AA1C25F35B00AD4700 /* PriceTableView.m */; };
+		651E55EA1C26011600AD4700 /* tabularData.icns in Resources */ = {isa = PBXBuildFile; fileRef = 651E55E91C26011600AD4700 /* tabularData.icns */; };
+		6524E5311C1EEB5700627034 /* Tribalmarkings-Aquave-Cash-Dollar-folder.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6524E5301C1EEB5700627034 /* Tribalmarkings-Aquave-Cash-Dollar-folder.icns */; };
+		656F77651C1EE2790002C912 /* NeXTSTEP-SteveJobs.icns in Resources */ = {isa = PBXBuildFile; fileRef = 656F77641C1EE2790002C912 /* NeXTSTEP-SteveJobs.icns */; };
+		657F8DAB1C22D8FC002B3637 /* stock-market.icns in Resources */ = {isa = PBXBuildFile; fileRef = 657F8DAA1C22D8FC002B3637 /* stock-market.icns */; };
+		658AEEFD1C26B91D007D55B9 /* Matiasam-Ios7-Style-Stock.icns in Resources */ = {isa = PBXBuildFile; fileRef = 658AEEFC1C26B91D007D55B9 /* Matiasam-Ios7-Style-Stock.icns */; };
+		658F0C321C03333600AC03EF /* Yen coin.icns in Resources */ = {isa = PBXBuildFile; fileRef = 658F0C311C03333600AC03EF /* Yen coin.icns */; };
+		65A618571C03CF2A001716B4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A618561C03CF2A001716B4 /* libsqlite3.0.dylib */; };
+		65AA0D601BF6621500AFE72C /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AA0D5F1BF6621500AFE72C /* Price.m */; };
+		65AA0D941BF6646B00AFE72C /* PriceDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AA0D931BF6646B00AFE72C /* PriceDao.m */; };
+		65AA0D9C1BF6699500AFE72C /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AA0D9A1BF6699500AFE72C /* AppController.m */; };
+		65B82BBE1C1C9A0400018FEB /* PriceWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B82BBD1C1C9A0400018FEB /* PriceWindowController.m */; };
+		65C13B561C1EDD500099AF31 /* NeXTSTEP-SteveJobs.tif in Resources */ = {isa = PBXBuildFile; fileRef = 65C13B551C1EDD500099AF31 /* NeXTSTEP-SteveJobs.tif */; };
+		65C9AFAD1C0A10DA000B344C /* Instrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C9AFAC1C0A10DA000B344C /* Instrument.m */; };
+		65C9AFB11C0A1147000B344C /* InstrumentDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C9AFB01C0A1147000B344C /* InstrumentDao.m */; };
+		65E5CB3B1C2FFE41009ABB70 /* PriceChart.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E5CB3A1C2FFE41009ABB70 /* PriceChart.xib */; };
+		65E5CB401C30009C009ABB70 /* ChartWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5CB3F1C30009C009ABB70 /* ChartWindowController.m */; };
+		65E5CBAF1C30090F009ABB70 /* PriceChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5CBAE1C30090F009ABB70 /* PriceChartView.m */; };
+		65E5CBBB1C300AB2009ABB70 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E5CBBA1C300AB2009ABB70 /* Quartz.framework */; };
+		65EABA1A1C1C4F660017FBF0 /* PriceWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EABA191C1C4F650017FBF0 /* PriceWindow.xib */; };
+		65FEF7761C09D30C00A0A2ED /* FDOConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FEF7651C09D30C00A0A2ED /* FDOConnection.m */; };
+		65FEF7771C09D30C00A0A2ED /* FDOException.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FEF7671C09D30C00A0A2ED /* FDOException.m */; };
+		65FEF7781C09D30C00A0A2ED /* FDOLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FEF7691C09D30C00A0A2ED /* FDOLog.m */; };
+		65FEF7791C09D30C00A0A2ED /* FDOSQLiteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FEF76E1C09D30C00A0A2ED /* FDOSQLiteCommand.m */; };
+		65FEF77A1C09D30C00A0A2ED /* FDOSQLiteConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FEF7701C09D30C00A0A2ED /* FDOSQLiteConnection.m */; };
+		65FEF77B1C09D30C00A0A2ED /* FDOSQLiteRecordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FEF7731C09D30C00A0A2ED /* FDOSQLiteRecordSet.m */; };
+		65FEF77C1C09D30C00A0A2ED /* FDOSQLiteUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FEF7751C09D30C00A0A2ED /* FDOSQLiteUtilities.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* PortfolioManager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortfolioManager_Prefix.pch; sourceTree = "<group>"; };
+		651E55A91C25F35B00AD4700 /* PriceTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceTableView.h; sourceTree = "<group>"; };
+		651E55AA1C25F35B00AD4700 /* PriceTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceTableView.m; sourceTree = "<group>"; };
+		651E55E91C26011600AD4700 /* tabularData.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = tabularData.icns; sourceTree = "<group>"; };
+		6524E5301C1EEB5700627034 /* Tribalmarkings-Aquave-Cash-Dollar-folder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Tribalmarkings-Aquave-Cash-Dollar-folder.icns"; sourceTree = "<group>"; };
+		656F77641C1EE2790002C912 /* NeXTSTEP-SteveJobs.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "NeXTSTEP-SteveJobs.icns"; sourceTree = "<group>"; };
+		657F8DAA1C22D8FC002B3637 /* stock-market.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "stock-market.icns"; sourceTree = "<group>"; };
+		658AEEFC1C26B91D007D55B9 /* Matiasam-Ios7-Style-Stock.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Matiasam-Ios7-Style-Stock.icns"; sourceTree = "<group>"; };
+		658F0C311C03333600AC03EF /* Yen coin.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Yen coin.icns"; sourceTree = "<group>"; };
+		65A618561C03CF2A001716B4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		65AA0D5E1BF6621500AFE72C /* Price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Price.h; sourceTree = "<group>"; };
+		65AA0D5F1BF6621500AFE72C /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
+		65AA0D921BF6646B00AFE72C /* PriceDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceDao.h; sourceTree = "<group>"; };
+		65AA0D931BF6646B00AFE72C /* PriceDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceDao.m; sourceTree = "<group>"; };
+		65AA0D9A1BF6699500AFE72C /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		65AA0D9B1BF6699500AFE72C /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		65B82BBC1C1C9A0400018FEB /* PriceWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceWindowController.h; sourceTree = "<group>"; };
+		65B82BBD1C1C9A0400018FEB /* PriceWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceWindowController.m; sourceTree = "<group>"; };
+		65C13B551C1EDD500099AF31 /* NeXTSTEP-SteveJobs.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "NeXTSTEP-SteveJobs.tif"; sourceTree = "<group>"; };
+		65C9AFAB1C0A10DA000B344C /* Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instrument.h; sourceTree = "<group>"; };
+		65C9AFAC1C0A10DA000B344C /* Instrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instrument.m; sourceTree = "<group>"; };
+		65C9AFAF1C0A1147000B344C /* InstrumentDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrumentDao.h; sourceTree = "<group>"; };
+		65C9AFB01C0A1147000B344C /* InstrumentDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrumentDao.m; sourceTree = "<group>"; };
+		65E5CB3A1C2FFE41009ABB70 /* PriceChart.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceChart.xib; sourceTree = "<group>"; };
+		65E5CB3E1C30009C009ABB70 /* ChartWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartWindowController.h; sourceTree = "<group>"; };
+		65E5CB3F1C30009C009ABB70 /* ChartWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartWindowController.m; sourceTree = "<group>"; };
+		65E5CBAD1C30090F009ABB70 /* PriceChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceChartView.h; sourceTree = "<group>"; };
+		65E5CBAE1C30090F009ABB70 /* PriceChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceChartView.m; sourceTree = "<group>"; };
+		65E5CBBA1C300AB2009ABB70 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		65EABA191C1C4F650017FBF0 /* PriceWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceWindow.xib; sourceTree = "<group>"; };
+		65FEF7631C09D30C00A0A2ED /* FDOCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOCommand.h; sourceTree = "<group>"; };
+		65FEF7641C09D30C00A0A2ED /* FDOConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOConnection.h; sourceTree = "<group>"; };
+		65FEF7651C09D30C00A0A2ED /* FDOConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOConnection.m; sourceTree = "<group>"; };
+		65FEF7661C09D30C00A0A2ED /* FDOException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOException.h; sourceTree = "<group>"; };
+		65FEF7671C09D30C00A0A2ED /* FDOException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOException.m; sourceTree = "<group>"; };
+		65FEF7681C09D30C00A0A2ED /* FDOLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOLog.h; sourceTree = "<group>"; };
+		65FEF7691C09D30C00A0A2ED /* FDOLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOLog.m; sourceTree = "<group>"; };
+		65FEF76A1C09D30C00A0A2ED /* FDORecordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDORecordSet.h; sourceTree = "<group>"; };
+		65FEF76B1C09D30C00A0A2ED /* FoundationDataObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationDataObjects.h; sourceTree = "<group>"; };
+		65FEF76D1C09D30C00A0A2ED /* FDOSQLiteCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteCommand.h; sourceTree = "<group>"; };
+		65FEF76E1C09D30C00A0A2ED /* FDOSQLiteCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOSQLiteCommand.m; sourceTree = "<group>"; };
+		65FEF76F1C09D30C00A0A2ED /* FDOSQLiteConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteConnection.h; sourceTree = "<group>"; };
+		65FEF7701C09D30C00A0A2ED /* FDOSQLiteConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOSQLiteConnection.m; sourceTree = "<group>"; };
+		65FEF7711C09D30C00A0A2ED /* FDOSQLiteException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteException.h; sourceTree = "<group>"; };
+		65FEF7721C09D30C00A0A2ED /* FDOSQLiteRecordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteRecordSet.h; sourceTree = "<group>"; };
+		65FEF7731C09D30C00A0A2ED /* FDOSQLiteRecordSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOSQLiteRecordSet.m; sourceTree = "<group>"; };
+		65FEF7741C09D30C00A0A2ED /* FDOSQLiteUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDOSQLiteUtilities.h; sourceTree = "<group>"; };
+		65FEF7751C09D30C00A0A2ED /* FDOSQLiteUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDOSQLiteUtilities.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* PortfolioManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortfolioManager.app; sourceTree = BUILT_PRODUCTS_DIR; wrapsLines = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				65A618571C03CF2A001716B4 /* libsqlite3.0.dylib in Frameworks */,
+				65E5CBBB1C300AB2009ABB70 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				65E5CBAD1C30090F009ABB70 /* PriceChartView.h */,
+				65E5CBAE1C30090F009ABB70 /* PriceChartView.m */,
+				651E55A91C25F35B00AD4700 /* PriceTableView.h */,
+				651E55AA1C25F35B00AD4700 /* PriceTableView.m */,
+				65C9AFAE1C0A10F1000B344C /* DomainModel */,
+				65C9AFAA1C0A10B4000B344C /* DAO */,
+				65FEF7621C09D30C00A0A2ED /* FDO */,
+				65AA0D9A1BF6699500AFE72C /* AppController.m */,
+				65AA0D9B1BF6699500AFE72C /* AppController.h */,
+				65B82BBC1C1C9A0400018FEB /* PriceWindowController.h */,
+				65E5CB3E1C30009C009ABB70 /* ChartWindowController.h */,
+				65E5CB3F1C30009C009ABB70 /* ChartWindowController.m */,
+				65B82BBD1C1C9A0400018FEB /* PriceWindowController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65E5CBBA1C300AB2009ABB70 /* Quartz.framework */,
+				65A618561C03CF2A001716B4 /* libsqlite3.0.dylib */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* PortfolioManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* PortfolioManager */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = PortfolioManager;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* PortfolioManager_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				658D83261C32ECF300368876 /* nib */,
+				658AEEFC1C26B91D007D55B9 /* Matiasam-Ios7-Style-Stock.icns */,
+				651E55E91C26011600AD4700 /* tabularData.icns */,
+				657F8DAA1C22D8FC002B3637 /* stock-market.icns */,
+				6524E5301C1EEB5700627034 /* Tribalmarkings-Aquave-Cash-Dollar-folder.icns */,
+				658F0C311C03333600AC03EF /* Yen coin.icns */,
+				656F77641C1EE2790002C912 /* NeXTSTEP-SteveJobs.icns */,
+				65C13B551C1EDD500099AF31 /* NeXTSTEP-SteveJobs.tif */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		658D83261C32ECF300368876 /* nib */ = {
+			isa = PBXGroup;
+			children = (
+				65EABA191C1C4F650017FBF0 /* PriceWindow.xib */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				65E5CB3A1C2FFE41009ABB70 /* PriceChart.xib */,
+			);
+			name = nib;
+			sourceTree = "<group>";
+		};
+		65C9AFAA1C0A10B4000B344C /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				65C9AFAF1C0A1147000B344C /* InstrumentDao.h */,
+				65C9AFB01C0A1147000B344C /* InstrumentDao.m */,
+				65AA0D921BF6646B00AFE72C /* PriceDao.h */,
+				65AA0D931BF6646B00AFE72C /* PriceDao.m */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		65C9AFAE1C0A10F1000B344C /* DomainModel */ = {
+			isa = PBXGroup;
+			children = (
+				65AA0D5E1BF6621500AFE72C /* Price.h */,
+				65AA0D5F1BF6621500AFE72C /* Price.m */,
+				65C9AFAB1C0A10DA000B344C /* Instrument.h */,
+				65C9AFAC1C0A10DA000B344C /* Instrument.m */,
+			);
+			name = DomainModel;
+			sourceTree = "<group>";
+		};
+		65FEF7621C09D30C00A0A2ED /* FDO */ = {
+			isa = PBXGroup;
+			children = (
+				65FEF7631C09D30C00A0A2ED /* FDOCommand.h */,
+				65FEF7641C09D30C00A0A2ED /* FDOConnection.h */,
+				65FEF7651C09D30C00A0A2ED /* FDOConnection.m */,
+				65FEF7661C09D30C00A0A2ED /* FDOException.h */,
+				65FEF7671C09D30C00A0A2ED /* FDOException.m */,
+				65FEF7681C09D30C00A0A2ED /* FDOLog.h */,
+				65FEF7691C09D30C00A0A2ED /* FDOLog.m */,
+				65FEF76A1C09D30C00A0A2ED /* FDORecordSet.h */,
+				65FEF76B1C09D30C00A0A2ED /* FoundationDataObjects.h */,
+				65FEF76C1C09D30C00A0A2ED /* SQLite */,
+			);
+			path = FDO;
+			sourceTree = "<group>";
+		};
+		65FEF76C1C09D30C00A0A2ED /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				65FEF76D1C09D30C00A0A2ED /* FDOSQLiteCommand.h */,
+				65FEF76E1C09D30C00A0A2ED /* FDOSQLiteCommand.m */,
+				65FEF76F1C09D30C00A0A2ED /* FDOSQLiteConnection.h */,
+				65FEF7701C09D30C00A0A2ED /* FDOSQLiteConnection.m */,
+				65FEF7711C09D30C00A0A2ED /* FDOSQLiteException.h */,
+				65FEF7721C09D30C00A0A2ED /* FDOSQLiteRecordSet.h */,
+				65FEF7731C09D30C00A0A2ED /* FDOSQLiteRecordSet.m */,
+				65FEF7741C09D30C00A0A2ED /* FDOSQLiteUtilities.h */,
+				65FEF7751C09D30C00A0A2ED /* FDOSQLiteUtilities.m */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* PortfolioManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "PortfolioManager" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PortfolioManager;
+			productInstallPath = "$(HOME)/Applications";
+			productName = PortfolioManager;
+			productReference = 8D1107320486CEB800E47090 /* PortfolioManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PortfolioManager" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* PortfolioManager */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* PortfolioManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				658F0C321C03333600AC03EF /* Yen coin.icns in Resources */,
+				65EABA1A1C1C4F660017FBF0 /* PriceWindow.xib in Resources */,
+				65C13B561C1EDD500099AF31 /* NeXTSTEP-SteveJobs.tif in Resources */,
+				656F77651C1EE2790002C912 /* NeXTSTEP-SteveJobs.icns in Resources */,
+				6524E5311C1EEB5700627034 /* Tribalmarkings-Aquave-Cash-Dollar-folder.icns in Resources */,
+				657F8DAB1C22D8FC002B3637 /* stock-market.icns in Resources */,
+				651E55EA1C26011600AD4700 /* tabularData.icns in Resources */,
+				658AEEFD1C26B91D007D55B9 /* Matiasam-Ios7-Style-Stock.icns in Resources */,
+				65E5CB3B1C2FFE41009ABB70 /* PriceChart.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				65AA0D601BF6621500AFE72C /* Price.m in Sources */,
+				65AA0D941BF6646B00AFE72C /* PriceDao.m in Sources */,
+				65AA0D9C1BF6699500AFE72C /* AppController.m in Sources */,
+				65FEF7761C09D30C00A0A2ED /* FDOConnection.m in Sources */,
+				65FEF7771C09D30C00A0A2ED /* FDOException.m in Sources */,
+				65FEF7781C09D30C00A0A2ED /* FDOLog.m in Sources */,
+				65FEF7791C09D30C00A0A2ED /* FDOSQLiteCommand.m in Sources */,
+				65FEF77A1C09D30C00A0A2ED /* FDOSQLiteConnection.m in Sources */,
+				65FEF77B1C09D30C00A0A2ED /* FDOSQLiteRecordSet.m in Sources */,
+				65FEF77C1C09D30C00A0A2ED /* FDOSQLiteUtilities.m in Sources */,
+				65C9AFAD1C0A10DA000B344C /* Instrument.m in Sources */,
+				65C9AFB11C0A1147000B344C /* InstrumentDao.m in Sources */,
+				65B82BBE1C1C9A0400018FEB /* PriceWindowController.m in Sources */,
+				651E55AB1C25F35B00AD4700 /* PriceTableView.m in Sources */,
+				65E5CB401C30009C009ABB70 /* ChartWindowController.m in Sources */,
+				65E5CBAF1C30090F009ABB70 /* PriceChartView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PortfolioManager_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = PortfolioManager;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PortfolioManager_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = PortfolioManager;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "PortfolioManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PortfolioManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

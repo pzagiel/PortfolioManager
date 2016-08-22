@@ -1,0 +1,170 @@
+Sub InstrumentPriceFunction
+Function GetBestPrice(iSin As String) As Double
+'Application.Volatile
+Dim File_Path As String
+File_Path = "Macintosh HD:Users:pzagiel:Dropbox:Finance Toolkit:Hello:Prices:" + iSin + ".xls"
+'File_Path = "/tmp/" + iSin + ".xls"
+Open File_Path For Input As #1
+row_num = 0
+Do Until EOF(1)
+   Line Input #1, Line_FromFile
+Loop
+Close #1
+Row = Split(Line_FromFile, ",")
+GetBestPrice = Row(1)
+End Function
+
+Function GetBestPriceEvol(iSin As String) As Double
+Application.Volatile
+Dim File_Path As String
+File_Path = "Macintosh HD:Users:pzagiel:Dropbox:Finance Toolkit:Hello:Prices:" + iSin + ".xls"
+'File_Path = "/tmp/" + iSin + ".xls"
+Open File_Path For Input As #1
+row_num = 0
+Do Until EOF(1)
+   Line Input #1, Line_FromFile
+Loop
+Close #1
+Row = Split(Line_FromFile, ",")
+GetBestPriceEvol = Row(2)
+End Function
+
+Public Function Split(ByVal sInput As String, _
+Optional ByVal sDelimiter As String, _
+Optional ByVal nLimit As Long = -1, _
+Optional ByVal bCompare As Integer = vbBinaryCompare _
+) As Variant
+Dim nCount As Long
+Dim nPos As Long
+Dim nDelimiterLength As Long
+Dim nStart As Long
+Dim sOutput() As String
+
+If nLimit = 0 Then
+Split = Array()
+Else
+nDelimiterLength = Len(sDelimiter)
+If nDelimiterLength = 0 Then
+Split = Array(sInput)
+Else
+nStart = 1
+nPos = InStr(nStart, sInput, sDelimiter, bCompare)
+Do While nPos
+ReDim Preserve sOutput(0 To nCount) As String
+If nCount + 1 = nLimit Then
+sOutput(nCount) = Mid(sInput, nStart)
+Exit Do
+Else
+sOutput(nCount) = Mid(sInput, nStart, nPos - nStart)
+nStart = nPos + nDelimiterLength
+End If
+nCount = nCount + 1
+nPos = InStr(nStart, sInput, sDelimiter, bCompare)
+Loop
+ReDim Preserve sOutput(0 To nCount) As String
+sOutput(nCount) = Mid(sInput, nStart)
+Split = sOutput
+End If
+End If
+End Function
+
+
+Sub Test()
+Dim File_Path As String
+'File_Path = " /Users/pzagiel/Dropbox/Finance Toolkit/Hello/Prices/" + iSin + ".xls"
+File_Path = "Macintosh HD:tmp:LU0086177085.xls"
+Open File_Path For Input As #1
+row_num = 0
+Do Until EOF(1)
+   Line Input #1, Line_FromFile
+  ' SplitMultiDelims Line_FromFile, "\t"
+   Debug.Print Mid(Line_FromFile, 12)
+Loop
+Close #1
+End Sub
+
+Function SplitMultiDelims(Text, DelimChars As String) As String
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' SplitMutliChar
+' This function splits Text into an array of substrings, each substring
+' delimited by any character in DelimChars. Only a single character
+' may be a delimiter between two substrings, but DelimChars may
+' contain any number of delimiter characters. If you need multiple
+' character delimiters, use the SplitMultiDelimsEX function. It returns
+' an unallocated array it Text is empty, a single element array
+' containing all of text if DelimChars is empty, or a 1 or greater
+' element array if the Text is successfully split into substrings.
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Dim Pos1 As Long
+Dim N As Long
+Dim M As Long
+Dim Arr() As String
+Dim I As Long
+
+''''''''''''''''''''''''''''''''
+' if Text is empty, get out
+''''''''''''''''''''''''''''''''
+If Len(Text) = 0 Then
+    Exit Function
+End If
+''''''''''''''''''''''''''''''''''''''''''''''
+' if DelimChars is empty, return original text
+'''''''''''''''''''''''''''''''''''''''''''''
+If DelimChars = vbNullString Then
+    SplitMultiDelims = Array(Text)
+    Exit Function
+End If
+
+'''''''''''''''''''''''''''''''''''''''''''''''
+' oversize the array, we'll shrink it later so
+' we don't need to use Redim Preserve
+'''''''''''''''''''''''''''''''''''''''''''''''
+ReDim Arr(1 To Len(Text))
+
+I = 0
+N = 0
+Pos1 = 1
+
+For N = 1 To Len(Text)
+    For M = 1 To Len(DelimChars)
+        If StrComp(Mid(Text, N, 1), Mid(DelimChars, M, 1), vbTextCompare) = 0 Then
+            I = I + 1
+            Arr(I) = Mid(Text, Pos1, N - Pos1)
+            Pos1 = N + 1
+            N = N + 1
+        End If
+    Next M
+Next N
+
+If Pos1 <= Len(Text) Then
+    I = I + 1
+    Arr(I) = Mid(Text, Pos1)
+End If
+End Function
+
+
+
+
+Sub Select_Folder_On_Mac()
+    Dim folderPath As String
+    Dim RootFolder As String
+
+    On Error Resume Next
+    RootFolder = MacScript("return (path to desktop folder) as String")
+    'Or use RootFolder = "Macintosh HD:Users:YourUserName:Desktop:TestMap:"
+    folderPath = MacScript("(choose folder with prompt ""Select the folder""" & _
+    "default location alias """ & RootFolder & """) as string")
+    On Error GoTo 0
+
+    If folderPath <> "" Then
+        MsgBox folderPath
+    End If
+End Sub
+
+Private Sub Worksheet_SelectionChange(ByVal Target As Excel.Range)
+
+End Sub
+
+
+
+End Sub

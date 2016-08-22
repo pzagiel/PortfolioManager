@@ -1,0 +1,13 @@
+Java
+Hibernate
+ActiveJDBC (Seems Very Good and very Simple)
+OrmLite 
+
+Objective C
+BRORM (ORM Objective C, SqlLite)
+http://nautilebleu.tumblr.com/post/63675066723/brorm-to-be-alive
+SQPersist
+FMDB
+iActiveRecord
+ActiveRecord
+https://github.com/drichardson/fdo/tree/master
